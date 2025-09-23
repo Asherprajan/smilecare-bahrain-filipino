@@ -47,6 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        healthcare: {
+          blue: "hsl(var(--healthcare-blue))",
+          "blue-light": "hsl(var(--healthcare-blue-light))",
+          "blue-dark": "hsl(var(--healthcare-blue-dark))",
+          green: "hsl(var(--healthcare-green))",
+          "green-light": "hsl(var(--healthcare-green-light))",
+          gray: "hsl(var(--healthcare-gray))",
+          "gray-dark": "hsl(var(--healthcare-gray-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +71,19 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-accent": "var(--gradient-accent)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        "soft": "var(--shadow-soft)",
+        "medium": "var(--shadow-medium)",
+        "large": "var(--shadow-large)",
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
