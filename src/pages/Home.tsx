@@ -358,7 +358,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-white py-28 lg:py-48 overflow-hidden min-h-[80vh]">
+      <section className="relative text-white py-20 lg:py-32 overflow-hidden min-h-[80vh] flex items-center">
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
@@ -379,29 +379,32 @@ const Home = () => {
           <div className="absolute top-1/2 left-16 w-20 h-20 bg-white/10 rounded-full blur-md animate-float-reverse" />
         </div>
 
-        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
+        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-8 w-full flex items-center">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 w-full">
             {/* Left: Main Hero Content */}
-            <div className="flex-1 text-left">
-              <Badge className="mb-7 bg-white/20 text-white border-white/30 hover:bg-white/30 inline-flex items-center shadow-md">
+            <div className="flex-1 flex flex-col justify-center text-left">
+              <Badge
+                className="mb-5 bg-white/20 text-white border-white/30 hover:bg-white/30 inline-flex items-center shadow-md text-xs sm:text-sm"
+                style={{ width: "fit-content" }}
+              >
                 <Award className="w-4 h-4 mr-2" />
                 Trusted by the Filipino Community
               </Badge>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg roboto-black text-left">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 leading-tight drop-shadow-lg roboto-black text-left">
                 <span className="block">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-healthcare-green-light to-white">
                     SmileCare Dental Insurance
                   </span>
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
+              <p className="text-base sm:text-lg lg:text-xl mb-6 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
                 World-class dental coverage, affordable and culturally sensitive&mdash;designed for Filipino families in the Kingdom of Bahrain.
               </p>
         
-              <div className="flex flex-col sm:flex-row gap-4 justify-start mb-10">
+              <div className="flex flex-col sm:flex-row gap-3 justify-start mb-8">
                 <Button
                   size="lg"
-                  className="bg-healthcare-green hover:bg-healthcare-green-light text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+                  className="bg-healthcare-green hover:bg-healthcare-green-light text-white px-6 py-3 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
                   asChild
                 >
                   <Link to="/registration">
@@ -412,7 +415,7 @@ const Home = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-healthcare-blue px-8 py-4 text-lg font-semibold backdrop-blur-sm"
+                  className="border-2 border-white text-white hover:bg-white hover:text-healthcare-blue px-6 py-3 text-base font-semibold backdrop-blur-sm"
                   asChild
                 >
                   <Link to="/plans">
@@ -425,21 +428,21 @@ const Home = () => {
             {/* Right: Quick Stats Card (optional, can be enabled if needed) */}
             {/* 
             <div className="flex-1 flex justify-center">
-              <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 grid grid-cols-2 gap-6 w-full max-w-md">
+              <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-6 grid grid-cols-2 gap-4 w-full max-w-md">
                 <div className="text-center">
-                  <div className="text-2xl font-extrabold text-healthcare-green-light drop-shadow roboto-black">BD 14</div>
+                  <div className="text-lg font-extrabold text-healthcare-green-light drop-shadow roboto-black">BD 14</div>
                   <div className="text-xs text-gray-200 mt-1 roboto-regular">Starting price</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-extrabold text-healthcare-green-light drop-shadow roboto-black">24h</div>
+                  <div className="text-lg font-extrabold text-healthcare-green-light drop-shadow roboto-black">24h</div>
                   <div className="text-xs text-gray-200 mt-1 roboto-regular">Activation time</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-extrabold text-healthcare-green-light drop-shadow roboto-black">100%</div>
+                  <div className="text-lg font-extrabold text-healthcare-green-light drop-shadow roboto-black">100%</div>
                   <div className="text-xs text-gray-200 mt-1 roboto-regular">Preventive care</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-extrabold text-healthcare-green-light drop-shadow roboto-black">30+</div>
+                  <div className="text-lg font-extrabold text-healthcare-green-light drop-shadow roboto-black">30+</div>
                   <div className="text-xs text-gray-200 mt-1 roboto-regular">Years experience</div>
                 </div>
               </div>

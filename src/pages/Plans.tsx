@@ -371,54 +371,7 @@ const Plans = () => {
       </section>
 
       {/* Coverage Details Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-healthcare-gray/30">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 roboto-bold">
-              Detailed <span className="text-healthcare-blue">Coverage</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed roboto-regular">
-              Comprehensive coverage across all dental treatment categories
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {coverageDetails.map((category, index) => (
-              <Card key={index} className="group border-0 shadow-soft hover:shadow-large transition-all duration-300 hover:-translate-y-1 bg-white">
-                <CardHeader className="text-center pb-2">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-2 group-hover:scale-105 transition-transform duration-300">
-                    <category.icon className="h-6 w-6 text-white" />
-                  </div>
-                  <CardTitle className="text-lg font-bold text-foreground group-hover:text-healthcare-blue transition-colors roboto-bold">
-                    {category.category}
-                  </CardTitle>
-                  <Badge className={`w-fit mx-auto text-xs ${
-                    category.color === 'green' ? 'bg-green-100 text-green-800' :
-                    category.color === 'blue' ? 'bg-blue-100 text-blue-800' :
-                    category.color === 'purple' ? 'bg-purple-100 text-purple-800' :
-                    'bg-red-100 text-red-800'
-                  }`}>
-                    {category.coverage} Covered
-                  </Badge>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="space-y-2">
-                    {category.treatments.map((treatment, treatmentIndex) => (
-                      <div key={treatmentIndex} className="flex items-center justify-between">
-                        <div className="flex items-center">
-                          <treatment.icon className="w-4 h-4 mr-2 text-healthcare-green flex-shrink-0" />
-                          <span className="text-foreground roboto-regular text-sm">{treatment.name}</span>
-                        </div>
-                        <span className="text-xs text-muted-foreground roboto-medium">{treatment.frequency}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Eligibility Requirements Section */}
       <section className="py-16 bg-white">
