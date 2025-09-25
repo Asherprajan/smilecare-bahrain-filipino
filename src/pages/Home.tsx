@@ -364,8 +364,12 @@ const Home = () => {
           <div className="w-full h-full bg-black/50" />
         </div>
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundAttachment: "fixed",
+            // Remove blur for mobile, only apply on md+ if needed
+          }}
         />
         {/* Animated floating shapes */}
         <div className="absolute inset-0 pointer-events-none z-20">
@@ -377,12 +381,12 @@ const Home = () => {
         <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-8">
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
             {/* Left: Main Hero Content */}
-            <div className="flex-1 text-center lg:text-left">
+            <div className="flex-1 text-left">
               <Badge className="mb-7 bg-white/20 text-white border-white/30 hover:bg-white/30 inline-flex items-center shadow-md">
                 <Award className="w-4 h-4 mr-2" />
                 Trusted by the Filipino Community
               </Badge>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg roboto-black">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg roboto-black text-left">
                 <span className="block">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-healthcare-green-light to-white">
                     SmileCare Dental Insurance
@@ -392,10 +396,10 @@ const Home = () => {
                   For Filipinos in Bahrain
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto lg:mx-0 text-gray-100/90 leading-relaxed roboto-regular">
+              <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
                 World-class dental coverage, <span className="text-healthcare-green-light font-semibold roboto-medium">affordable</span> and <span className="text-healthcare-blue-light font-semibold roboto-medium">culturally sensitive</span>—designed for Filipino families abroad.
               </p>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 text-sm">
+              <div className="flex flex-wrap justify-start gap-3 mb-8 text-sm">
                 <div className="flex items-center bg-white/10 px-4 py-2 rounded-full shadow-sm">
                   <CheckCircle className="w-4 h-4 mr-2 text-healthcare-green-light" />
                   Same-day approval
@@ -409,7 +413,7 @@ const Home = () => {
                   No waiting period
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+              <div className="flex flex-col sm:flex-row gap-4 justify-start mb-10">
                 <Button
                   size="lg"
                   className="bg-healthcare-green hover:bg-healthcare-green-light text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
