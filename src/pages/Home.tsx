@@ -358,13 +358,16 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray text-white py-28 lg:py-48 overflow-hidden min-h-[80vh]">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-          }}
+      <section className="relative text-white py-28 lg:py-48 overflow-hidden min-h-[80vh]">
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="/mazaya_hero_video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={heroImage}
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 z-10">
@@ -391,7 +394,6 @@ const Home = () => {
                     SmileCare Dental Insurance
                   </span>
                 </span>
-          
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
                 World-class dental coverage, <span className="text-healthcare-green-light font-semibold roboto-medium">affordable</span> and <span className="text-healthcare-blue-light font-semibold roboto-medium">culturally sensitive</span>—designed for Filipino families abroad.
