@@ -1,104 +1,123 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
-  TrendingUp,
-  Shield,
   DollarSign,
-  Users,
-  CheckCircle,
-  Heart,
+  XCircle,
+  TrendingDown,
+  MessageCircle,
+  Building2,
+  Shield,
 } from "lucide-react";
 
+const challenges = [
+  {
+    icon: DollarSign,
+    title: "Expensive Insurance",
+    description:
+      "Traditional dental insurance is often too costly for many Filipino residents.",
+    iconBg: "bg-red-100",
+    iconColor: "text-red-600",
+  },
+  {
+    icon: XCircle,
+    title: "Limited Coverage",
+    description:
+      "Most plans don’t cover the full range of dental needs.",
+    iconBg: "bg-red-100",
+    iconColor: "text-red-600",
+  },
+  {
+    icon: TrendingDown,
+    title: "Financial Pressure",
+    description:
+      "Dental care can create extra financial stress.",
+    iconBg: "bg-red-100",
+    iconColor: "text-red-600",
+  },
+];
+
+const solutions = [
+  {
+    icon: Shield,
+    title: "Tailored Plans",
+    description:
+      "Coverage designed for Filipino residents.",
+    iconBg: "bg-healthcare-blue/10",
+    iconColor: "text-healthcare-blue",
+  },
+  {
+    icon: DollarSign,
+    title: "Affordable Rates",
+    description:
+      "Low-cost, comprehensive dental insurance.",
+    iconBg: "bg-healthcare-green/10",
+    iconColor: "text-healthcare-green",
+  },
+  {
+    icon: MessageCircle,
+    title: "Cultural Sensitivity",
+    description:
+      "Tagalog support and understanding of Filipino needs.",
+    iconBg: "bg-healthcare-blue/10",
+    iconColor: "text-healthcare-blue",
+  },
+  {
+    icon: Building2,
+    title: "Quality Local Care",
+    description:
+      "Access to trusted dental clinics in Bahrain.",
+    iconBg: "bg-healthcare-blue/10",
+    iconColor: "text-healthcare-blue",
+  },
+];
+
 const Challenges = () => {
-  const challenges = [
-    {
-      icon: TrendingUp,
-      title: "Expensive Traditional Insurance",
-      description:
-        "Most dental insurance plans in Bahrain have prohibitively high premiums that strain family budgets.",
-    },
-    {
-      icon: Shield,
-      title: "Limited Coverage",
-      description:
-        "Traditional plans often include only basic services, leaving families to pay out-of-pocket for essential treatments.",
-    },
-    {
-      icon: DollarSign,
-      title: "Economic Pressure",
-      description:
-        "Filipino families abroad face unique financial pressures, making it difficult to afford necessary dental care.",
-    },
-  ];
-
-  const solutions = [
-    {
-      icon: Users,
-      title: "Tailored for Filipinos",
-      description:
-        "Plans designed with the Filipino community’s unique needs and circumstances in mind.",
-    },
-    {
-      icon: DollarSign,
-      title: "Affordable Pricing: BD 14–18/year",
-      description:
-        "Transparent, low-cost premiums that won’t break your family budget.",
-    },
-    {
-      icon: Heart,
-      title: "Tagalog-Speaking Support",
-      description:
-        "Communicate comfortably in your preferred language with our bilingual team.",
-    },
-    {
-      icon: CheckCircle,
-      title: "Comprehensive Services",
-      description:
-        "Access to quality dental care in a trusted, well-equipped clinic.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray">
       {/* Header */}
-      <section className="py-24 lg:py-32 relative text-white">
-        <div className="absolute inset-0 bg-black/70 z-0"></div>
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg roboto-black">
-            Dental Insurance in Bahrain: <span className="text-healthcare-green-light">The Real Challenges</span>
+      <section className="py-20 relative text-white">
+        <div className="absolute inset-0 bg-black/60 z-0"></div>
+        <div className="relative z-10 max-w-2xl mx-auto text-center px-4">
+          <Badge className="mb-3 bg-healthcare-green/10 text-healthcare-green border-healthcare-green/20 text-base font-semibold">
+            Challenges & Solution
+          </Badge>
+          <h1 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight drop-shadow-lg roboto-black">
+            Dental Insurance in Bahrain
           </h1>
-          <p className="text-xl sm:text-2xl text-white/80 max-w-2xl mx-auto mb-2 roboto-regular">
-            Most plans aren’t built for Filipino families. See the difference for yourself.
+          <p className="text-lg text-white/80 max-w-xl mx-auto mb-2 roboto-regular">
+            SmileCare: Affordable Dental Insurance for Filipino Residents
           </p>
         </div>
       </section>
 
-      {/* Challenges */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
-              What Makes Traditional Dental Insurance So Difficult?
+      {/* Challenges Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <Badge className="mb-3 bg-red-100 text-red-600 border-red-200 text-base font-semibold">
+              Challenges
+            </Badge>
+            <h2 className="text-2xl font-bold text-foreground mb-4 roboto-bold">
+              Why Is Dental Insurance Difficult?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
-              Filipino families in Bahrain face these obstacles when seeking dental coverage:
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto roboto-regular">
+              Common obstacles for Filipino residents in Bahrain:
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {challenges.map((challenge, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {challenges.map((item, idx) => (
               <Card
                 key={idx}
-                className="group border-0 shadow-soft hover:shadow-large transition-all duration-300 hover:-translate-y-2 bg-white/80 backdrop-blur-sm"
+                className="shadow-soft hover:shadow-md transition-all duration-300 bg-white"
               >
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-red-200 to-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <challenge.icon className="h-8 w-8 text-red-500" />
+                <CardContent className="p-5 flex flex-col items-center text-center">
+                  <div className={`w-11 h-11 ${item.iconBg} rounded-lg flex items-center justify-center mb-3`}>
+                    <item.icon className={`w-6 h-6 ${item.iconColor}`} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-3 text-healthcare-blue roboto-bold group-hover:text-healthcare-green transition-colors">
-                    {challenge.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed roboto-regular">
-                    {challenge.description}
+                  <h4 className="text-base font-bold text-foreground mb-1 roboto-bold">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground roboto-regular">
+                    {item.description}
                   </p>
                 </CardContent>
               </Card>
@@ -107,64 +126,67 @@ const Challenges = () => {
         </div>
       </section>
 
-      {/* Difference Section */}
-      <section className="py-20 bg-gradient-to-r from-healthcare-blue to-healthcare-green text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 roboto-bold">
-              SmileCare: <span className="text-healthcare-green-light">How We’re Different</span>
+      {/* Solution Section */}
+      <section className="py-12 bg-gradient-to-r from-healthcare-blue to-healthcare-green text-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <Badge className="mb-3 bg-healthcare-green/10 text-healthcare-green border-healthcare-green/20 text-base font-semibold">
+              SmileCare Solution
+            </Badge>
+            <h2 className="text-2xl font-bold mb-4 roboto-bold">
+              SmileCare: A Better Way
             </h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed roboto-regular">
-              We built SmileCare to solve these exact problems for Filipino families in Bahrain.
+            <p className="text-base text-white/80 max-w-2xl mx-auto roboto-regular">
+              Designed for Filipino residents in Bahrain.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {solutions.map((solution, idx) => (
-              <div
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {solutions.map((item, idx) => (
+              <Card
                 key={idx}
-                className="flex items-start gap-5 bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300"
+                className="shadow-soft hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-sm"
               >
-                <div className="w-14 h-14 bg-healthcare-green flex items-center justify-center rounded-xl shadow-lg mr-2">
-                  <solution.icon className="h-7 w-7 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2 text-white roboto-bold">
-                    {solution.title}
-                  </h3>
-                  <p className="text-white/80 leading-relaxed roboto-regular">
-                    {solution.description}
-                  </p>
-                </div>
-              </div>
+                <CardContent className="p-6 flex items-center">
+                  <div className={`w-12 h-12 ${item.iconBg} rounded-xl flex items-center justify-center mr-4`}>
+                    <item.icon className={`h-6 w-6 ${item.iconColor}`} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-1 text-white roboto-bold">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-white/80 roboto-regular">
+                      {item.description}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-healthcare-blue mb-6 roboto-bold">
-            See the SmileCare Difference
+      <section className="py-12 bg-white">
+        <div className="max-w-xl mx-auto text-center px-4">
+          <h2 className="text-2xl font-bold text-healthcare-blue mb-4 roboto-bold">
+            SmileCare: Affordable Dental Insurance
           </h2>
-          <p className="text-xl text-muted-foreground mb-10 roboto-regular">
-            Don’t let old insurance challenges hold you back. Experience affordable, community-focused dental coverage today.
+          <p className="text-base text-muted-foreground mb-6 roboto-regular">
+            Don’t let insurance challenges hold you back. Discover affordable, culturally sensitive dental coverage with SmileCare.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-healthcare-green hover:bg-healthcare-green-light text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 roboto-bold"
-              asChild
+          <Button
+            size="lg"
+            className="bg-healthcare-green hover:bg-healthcare-green-light text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 roboto-bold"
+            asChild
+          >
+            <a
+              href="https://fakhroinsurance.com/special-payments/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://fakhroinsurance.com/special-payments/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Started Today
-              </a>
-            </Button>
-          </div>
+              Get Started
+            </a>
+          </Button>
         </div>
       </section>
     </div>

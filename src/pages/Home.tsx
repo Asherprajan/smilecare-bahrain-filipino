@@ -358,7 +358,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray text-white py-28 lg:py-48 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray text-white py-28 lg:py-48 overflow-hidden min-h-[80vh]">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
@@ -391,27 +391,12 @@ const Home = () => {
                     SmileCare Dental Insurance
                   </span>
                 </span>
-                <span className="block text-white/90 roboto-medium">
-                  For Filipinos in Kingdom of Bahrain
-                </span>
+          
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
                 World-class dental coverage, <span className="text-healthcare-green-light font-semibold roboto-medium">affordable</span> and <span className="text-healthcare-blue-light font-semibold roboto-medium">culturally sensitive</span>—designed for Filipino families abroad.
               </p>
-              <div className="flex flex-wrap justify-start gap-3 mb-8 text-sm">
-                <div className="flex items-center bg-white/10 px-4 py-2 rounded-full shadow-sm">
-                  <CheckCircle className="w-4 h-4 mr-2 text-healthcare-green-light" />
-                  Same-day approval
-                </div>
-                <div className="flex items-center bg-white/10 px-4 py-2 rounded-full shadow-sm">
-                  <CheckCircle className="w-4 h-4 mr-2 text-healthcare-green-light" />
-                  Tagalog support
-                </div>
-                <div className="flex items-center bg-white/10 px-4 py-2 rounded-full shadow-sm">
-                  <CheckCircle className="w-4 h-4 mr-2 text-healthcare-green-light" />
-                  No waiting period
-                </div>
-              </div>
+        
               <div className="flex flex-col sm:flex-row gap-4 justify-start mb-10">
                 <Button
                   size="lg"
@@ -471,10 +456,10 @@ const Home = () => {
               <Heart className="w-4 h-4 mr-2" />
               Our Plans
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               Choose Your <span className="text-healthcare-green">Perfect Plan</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed roboto-regular">
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed roboto-regular">
               Two comprehensive dental insurance plans designed specifically for Filipino families in Bahrain. 
               Both plans offer essential dental services with the same affordable deductible rate.
             </p>
@@ -647,13 +632,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-healthcare-blue/10 text-healthcare-blue border-healthcare-blue/20">
-              <Building2 className="w-4 h-4 mr-2" />
+              <Building2 className="w-4 h-4 mr-2" />  
               Our Partner Clinic
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               <span className="text-healthcare-blue">Mazaya Dental Centre</span> Service Capabilities
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
               Established in 2024 by Mr. Neel Antony, Mazaya Dental Centre provides exceptional dental care with a focus on Filipino patients' needs.
             </p>
           </div>
@@ -758,13 +743,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-healthcare-blue/10 text-healthcare-blue border-healthcare-blue/20">
-              <AlertCircle className="w-4 h-4 mr-2" />
+              <AlertCircle className="w-4 h-4 mr-2" />  
               Current Challenges & Solution
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               Current <span className="text-healthcare-blue">Challenges</span> & <span className="text-healthcare-blue">Solution</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
               Understanding the challenges Filipino residents face and how SmileCare provides the perfect solution
             </p>
           </div>
@@ -923,10 +908,10 @@ const Home = () => {
               <Handshake className="w-4 h-4 mr-2" />
               Strategic Partnerships
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               <span className="text-healthcare-blue">Strategic Partnerships</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed roboto-regular">
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed roboto-regular">   
               Smile Care built on strategic partnerships with key organizations that share a commitment to providing quality dental care to Filipino residents in Bahrain.
             </p>
           </div>
@@ -984,10 +969,10 @@ const Home = () => {
               <Rocket className="w-4 h-4 mr-2" />
               Simple Registration & Service Process
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               <span className="text-healthcare-green">Simple Registration</span> & <span className="text-healthcare-blue">Service Process</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed roboto-regular">
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed roboto-regular">
               Easy steps to access quality dental care designed for Filipino residents in Bahrain
             </p>
           </div>
@@ -1114,10 +1099,10 @@ const Home = () => {
               <MessageCircle className="w-4 h-4 mr-2" />
               Customer Stories
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               What Our <span className="text-healthcare-green">Customers Say</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
               Real stories from Filipino families who trust SmileCare for their dental needs
             </p>
           </div>
@@ -1203,11 +1188,11 @@ const Home = () => {
               <HelpCircle className="w-4 h-4 mr-2" />
               Frequently Asked
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 roboto-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-2 roboto-bold">
               Common <span className="text-healthcare-green">Questions</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
-              Everything you need to know about SmileCare dental insurance
+            <p className="text-sm lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed roboto-regular">
+              Everything you need to know about SmileCare dental insurance in Bahrain
             </p>
           </div>
           
@@ -1243,14 +1228,14 @@ const Home = () => {
             Join Our Community
           </Badge>
           
-          <h2 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight roboto-black">
+            <h2 className="text-3xl lg:text-5xl font-bold mb-2 leading-tight roboto-black">
             Ready to Protect Your <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-green-100">
               Family's Smile?
             </span>
-          </h2>
-          
-          <p className="text-xl lg:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed roboto-regular">
+          </h2>   
+            
+          <p className="text-sm lg:text-xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed roboto-regular">            
             Join hundreds of Filipino families who trust SmileCare for their dental needs. 
             <span className="font-semibold roboto-medium"> Get started today and experience the difference.</span>
           </p>

@@ -8,9 +8,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">S</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="SmileCare Logo"
+                className="w-10 h-10 rounded-lg object-contain"
+              />
               <span className="text-xl font-bold">SmileCare</span>
             </div>
             <p className="text-gray-300 mb-4">
