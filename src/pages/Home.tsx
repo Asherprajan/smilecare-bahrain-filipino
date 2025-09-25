@@ -367,7 +367,6 @@ const Home = () => {
           loop
           muted
           playsInline
-          poster={heroImage}
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 z-10">
@@ -396,7 +395,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
-                World-class dental coverage, <span className="text-healthcare-green-light font-semibold roboto-medium">affordable</span> and <span className="text-healthcare-blue-light font-semibold roboto-medium">culturally sensitive</span>—designed for Filipino families abroad.
+                World-class dental coverage, affordable and culturally sensitive&mdash;designed for Filipino families in the Kingdom of Bahrain.
               </p>
         
               <div className="flex flex-col sm:flex-row gap-4 justify-start mb-10">
