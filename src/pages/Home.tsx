@@ -359,18 +359,17 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray text-white py-28 lg:py-48 overflow-hidden">
-        {/* Layered background overlays */}
-        <div className="absolute inset-0 z-10">
-          <div className="w-full h-full bg-black/50" />
-        </div>
+        {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center z-0"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
             backgroundImage: `url(${heroImage})`,
-            backgroundAttachment: "fixed",
-            // Remove blur for mobile, only apply on md+ if needed
           }}
         />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 z-10">
+          <div className="w-full h-full bg-black/40" />
+        </div>
         {/* Animated floating shapes */}
         <div className="absolute inset-0 pointer-events-none z-20">
           <div className="absolute top-8 left-1/5 w-36 h-36 bg-healthcare-green/25 rounded-full blur-2xl animate-float-slow" />
@@ -393,7 +392,7 @@ const Home = () => {
                   </span>
                 </span>
                 <span className="block text-white/90 roboto-medium">
-                  For Filipinos in Bahrain
+                  For Filipinos in Kingdom of Bahrain
                 </span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-0 text-gray-100/90 leading-relaxed roboto-regular text-left">
