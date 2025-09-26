@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 import {
   DollarSign,
   XCircle,
@@ -75,6 +76,12 @@ const solutions = [
 const Challenges = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray">
+      <SEO
+        title="Dental Insurance Challenges & Solutions - SmileCare for Filipino Residents"
+        description="Understanding the challenges Filipino residents face with dental insurance in Bahrain and how SmileCare provides affordable, culturally sensitive solutions with comprehensive coverage starting from BD 14/year."
+        keywords="dental insurance challenges Bahrain, Filipino dental insurance problems, affordable dental insurance solutions, SmileCare solutions, dental insurance barriers, cultural sensitive dental care"
+        canonicalUrl="https://smilecare-bahrain.com/challenges"
+      />
       {/* Header */}
       <section className="py-20 relative text-white">
         <div className="absolute inset-0 bg-black/60 z-0"></div>

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import SEO from "@/components/SEO";
 import { 
   Check, 
   Zap, 
@@ -255,6 +256,12 @@ const Plans = () => {
 
   return (
     <div className="min-h-screen font-roboto bg-gradient-to-br from-healthcare-blue via-healthcare-green-light to-healthcare-gray">
+      <SEO
+        title="Dental Insurance Plans - SmileCare Plans A & B | BD 14-18/Year"
+        description="Compare SmileCare dental insurance plans for Filipino residents in Bahrain. Plan A (BD 18/year) for general public and Plan B (BD 14/year) for household staff. Comprehensive coverage with same-month activation."
+        keywords="dental insurance plans Bahrain, SmileCare Plan A, SmileCare Plan B, dental coverage options, Filipino dental insurance plans, BD 14 dental plan, BD 18 dental plan, household staff dental insurance"
+        canonicalUrl="https://smilecare-bahrain.com/plans"
+      />
       {/* Hero Section */}
       <section className="relative w-full h-[320px] lg:h-[420px] overflow-hidden">
         <video
@@ -263,6 +270,7 @@ const Plans = () => {
           autoPlay
           loop
           playsInline
+          aria-label="SmileCare dental insurance plans overview video"
         />
         <div className="absolute inset-0 bg-black/30" />
       </section>

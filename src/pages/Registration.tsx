@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SEO from "@/components/SEO";
 import {
   CheckCircle,
   Users,
@@ -73,6 +74,12 @@ const Registration = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-healthcare-blue/10 via-white to-healthcare-green/10">
+      <SEO
+        title="Register for SmileCare Dental Insurance - Simple 4-Step Process"
+        description="Register for SmileCare dental insurance in 4 simple steps. Online registration, same-month activation, and comprehensive coverage for Filipino residents in Bahrain. Start your registration today."
+        keywords="register dental insurance Bahrain, SmileCare registration, dental insurance sign up, Filipino dental insurance registration, online dental insurance registration, BD 14 dental insurance registration"
+        canonicalUrl="https://smilecare-bahrain.com/registration"
+      />
       {/* Header Section */}
       <section className="py-20 bg-gradient-to-r from-healthcare-green to-healthcare-blue text-white relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

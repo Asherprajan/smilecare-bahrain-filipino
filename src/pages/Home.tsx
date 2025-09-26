@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import { 
   Shield, 
   DollarSign, 
@@ -357,6 +358,12 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="SmileCare - Affordable Dental Insurance for Filipino Community in Bahrain | BD 14/Year"
+        description="Affordable dental insurance for Filipino residents in Bahrain. Plans from BD 14/year with comprehensive coverage, Tagalog support, and same-month activation. Trusted by 500+ Filipino families."
+        keywords="dental insurance Bahrain, Filipino dental insurance, affordable dental care Bahrain, SmileCare, dental coverage Bahrain, Filipino community Bahrain, dental plans Bahrain, BD 14 dental insurance, Tagalog dental support"
+        canonicalUrl="https://smilecare-bahrain.com"
+      />
       {/* Hero Section */}
       <section className="relative text-white py-20 lg:py-32 overflow-hidden min-h-[80vh] flex items-center">
         {/* Background Video */}
@@ -367,6 +374,7 @@ const Home = () => {
           loop
           muted
           playsInline
+          aria-label="SmileCare dental insurance promotional video showing dental care services"
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 z-10">

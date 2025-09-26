@@ -3,35 +3,40 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Challenges from "./pages/Challenges";
 import Plans from "./pages/Plans";
 import Partners from "./pages/Partners";
 import Registration from "./pages/Registration";
+import SEODashboard from "./pages/SEODashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/challenges" element={<Challenges />} />
-            <Route path="/plans" element={<Plans />} />
-            <Route path="/partners" element={<Partners />} />
-            <Route path="/registration" element={<Registration />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/challenges" element={<Challenges />} />
+              <Route path="/plans" element={<Plans />} />
+              <Route path="/partners" element={<Partners />} />
+              <Route path="/registration" element={<Registration />} />
+              <Route path="/admin/seo" element={<SEODashboard />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

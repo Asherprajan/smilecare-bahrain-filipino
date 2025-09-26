@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import {
   Building2,
   Shield,
@@ -85,6 +86,12 @@ const Partners = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-white to-healthcare-gray">
+      <SEO
+        title="SmileCare Partners - Trusted Insurance & Dental Providers in Bahrain"
+        description="Meet our trusted partners including Gulf Union Insurance, Fakhro Insurance Services, Philippine Embassy, and Mazaya Dental Centre providing comprehensive dental insurance for Filipino residents in Bahrain."
+        keywords="SmileCare partners, Gulf Union Insurance, Fakhro Insurance Services, Mazaya Dental Centre, Philippine Embassy Bahrain, dental insurance partners, trusted dental providers Bahrain"
+        canonicalUrl="https://smilecare-bahrain.com/partners"
+      />
       {/* Header Section */}
       <section className="py-20 bg-gradient-to-r from-healthcare-blue to-healthcare-green text-white relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

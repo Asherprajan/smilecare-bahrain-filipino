@@ -10,8 +10,10 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <img
                 src="/logo.png"
-                alt="SmileCare Logo"
+                alt="SmileCare Dental Insurance Logo - Affordable dental coverage for Filipino community in Bahrain"
                 className="w-10 h-10 rounded-lg object-contain"
+                width="40"
+                height="40"
               />
               <span className="text-xl font-bold">SmileCare</span>
             </div>
