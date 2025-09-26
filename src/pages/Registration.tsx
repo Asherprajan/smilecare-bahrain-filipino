@@ -26,7 +26,7 @@ const Registration = () => {
       step: 1,
       title: "Register Online",
       description:
-        "Visit fakhroinsurance.com and complete your registration form",
+        "Visit fakhroinsurance.com and complete your registration form at Special Payment Scheme",
       icon: ExternalLink,
     },
     {
