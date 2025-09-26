@@ -453,7 +453,7 @@ const Home = () => {
       </section>
 
       {/* Choose Your Perfect Plan Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-healthcare-green/10 text-healthcare-green border-healthcare-green/20">
@@ -470,7 +470,6 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* SmileCare Plan A */}
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl shadow-xl p-8 border-2 border-blue-200 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-200/30 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="relative z-10">
@@ -521,7 +520,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* For Household Staff */}
             <div className="bg-gradient-to-br from-pink-50 to-purple-100 rounded-3xl shadow-xl p-8 border-2 border-pink-200 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-pink-200/30 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="relative z-10">
@@ -571,7 +569,6 @@ const Home = () => {
             </div>
           </div>
           
-          {/* Additional Info */}
           <div className="mt-12 text-center">
             <div className="bg-gradient-to-r from-healthcare-green/10 to-healthcare-blue/10 rounded-2xl p-8 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold text-foreground mb-4 roboto-bold">
@@ -584,7 +581,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why SmileCare Section */}
       {/* <section className="py-20 bg-gradient-to-b from-background to-healthcare-gray/30">
@@ -1265,21 +1262,8 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <Phone className="w-8 h-8 mx-auto mb-3 text-white" />
-              <h3 className="font-bold text-white mb-2 roboto-bold">Call Us</h3>
-              <p className="text-white/80 text-sm roboto-regular">+973 1234 5678</p>
-            </div>
-            <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <MapPin className="w-8 h-8 mx-auto mb-3 text-white" />
-              <h3 className="font-bold text-white mb-2 roboto-bold">Visit Us</h3>
-              <p className="text-white/80 text-sm roboto-regular">Manama, Bahrain</p>
-            </div>
-            <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <MessageCircle className="w-8 h-8 mx-auto mb-3 text-white" />
-              <h3 className="font-bold text-white mb-2 roboto-bold">Chat Support</h3>
-              <p className="text-white/80 text-sm roboto-regular">24/7 Available</p>
-            </div>
+          
+          
           </div>
         </div>
       </section>

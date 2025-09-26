@@ -54,7 +54,7 @@ const Registration = () => {
     {
       title: "Call to Book",
       description:
-        "Contact Mazaya Dental Centre at +973-17777234 to schedule your appointment",
+        "Contact Mazaya Dental Centre at +973 39224333 or +973 17777234 to schedule your appointment",
       icon: Phone,
     },
     {
@@ -241,25 +241,20 @@ const Registration = () => {
               <CardContent className="p-8">
                 <Mail className="h-8 w-8 text-healthcare-blue mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2 text-foreground roboto-bold">Email Support</h3>
-                <p className="text-muted-foreground mb-2 roboto-regular">contact@smilecare.com</p>
+                <p className="text-muted-foreground mb-2 roboto-regular">Email address:
+                paresh.mhatre@fakhro.com</p>    
                 <Badge variant="outline" className="roboto-medium">24/7 Support</Badge>
               </CardContent>
             </Card>
             {/* Customer Service */}
-            <Card className="text-center border-0 shadow-soft bg-white/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <Phone className="h-8 w-8 text-healthcare-blue mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2 text-foreground roboto-bold">Customer Service</h3>
-                <p className="text-muted-foreground mb-2 roboto-regular">General Inquiries</p>
-                <Badge variant="outline" className="roboto-medium">Sat–Thu, 10 AM – 9 PM</Badge>
-              </CardContent>
-            </Card>
+        
             {/* Houras Consultancy */}
             <Card className="text-center border-0 shadow-soft bg-white/80 backdrop-blur-sm">
               <CardContent className="p-8">
                 <Phone className="h-8 w-8 text-healthcare-blue mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2 text-foreground roboto-bold">Houras Consultancy</h3>
-                <p className="text-muted-foreground mb-2 roboto-regular">+973 39999457</p>
+                <p className="text-muted-foreground mb-2 roboto-regular">+973 39224333</p>
+                <p className="text-muted-foreground mb-2 roboto-regular">+973 17777234</p>
                 <Badge variant="outline" className="roboto-medium">Sun–Thu, 10 AM – 7 PM</Badge>
               </CardContent>
             </Card>
@@ -268,7 +263,7 @@ const Registration = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-healthcare-green to-healthcare-blue text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-healthcare-green to-healthcare-blue text-white relative overflow-hidden"> 
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-24 h-24 bg-white/5 rounded-full animate-pulse delay-1000"></div>

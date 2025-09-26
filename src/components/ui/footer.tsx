@@ -26,15 +26,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-healthcare-blue-light" />
-                <span className="text-gray-300">contact@smilecare.com</span>
+                <span className="text-gray-300">Email address:  
+                paresh.mhatre@fakhro.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-healthcare-blue-light" />
-                <span className="text-gray-300">+973 39999457</span>
+                  <span className="text-gray-300">+973 39224333</span>
+                  <span className="text-gray-300">+973 17777234</span>
               </div>
               <div className="text-gray-300 text-sm">
                 <p>Customer Service: Sat–Thu, 10 AM – 9 PM</p>
-                <p>Houras Consultancy: Sun–Thu, 10 AM – 7 PM</p>
+                <p>Hours Consultancy: Sun–Thu, 10 AM – 7 PM</p>
               </div>
             </div>
           </div>

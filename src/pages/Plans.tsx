@@ -512,7 +512,7 @@ const Plans = () => {
               <ChevronRight className="w-4 h-4 ml-2" />
             </a>
             <a
-              href="tel:+97312345678"
+                href="tel:+97339224333"
               className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-healthcare-green px-6 py-3 text-base font-semibold rounded-full backdrop-blur-sm transition-all duration-300 roboto-bold"
             >
               <Phone className="w-4 h-4 mr-2" />
